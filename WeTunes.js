@@ -633,3 +633,37 @@ repeatIcon.addEventListener('click', () => {
         repeatIcon.style.color = '#fff';
     }
 });
+
+// Get the modal
+var modal = document.getElementById("loginModal");
+
+// Get the user icon and attach click event
+var userIcon = document.getElementById("userIcon");
+userIcon.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+document.getElementById('registerLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('signupForm').style.display = 'block';
+});
+
+document.getElementById('loginLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('signupForm').style.display = 'none';
+    document.getElementById('loginForm').style.display = 'block';
+});
