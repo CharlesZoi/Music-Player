@@ -36,3 +36,4 @@ Content section with background image and text.
 Buttons styling with hover effects.
 Styling for popular songs and artists sections.
 
+Updated: Added a Log in Form when clicking the user icon in upper right side.
