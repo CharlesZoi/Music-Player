@@ -114,9 +114,55 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search Music...">
                 </div>
-                <div class="user">
-                    <img src="Assets/images/gwapo.jpg" alt="">
+                <div class="user" id="userIcon">
+                    <img src="Assets/images/log in logo.webp" alt="User Icon">
                 </div>
+            
+
+                <!-- Login Modal -->
+<div id="loginModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="loginForm">
+            <div class="modal-header">
+                <h2>Login</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="switch-form">You don't have an account yet? <a href="#" id="registerLink">Click Register</a></p>
+            </div>
+        </div>
+        <div id="signupForm" style="display:none;">
+            <div class="modal-header">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p class="switch-form">Already have an account? <a href="#" id="loginLink">Click Login</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                
             </nav>
             <div class="content">
                 <h1>B4LB4UTOG-Zoilo</h1>
